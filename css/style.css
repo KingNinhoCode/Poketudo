@@ -1,0 +1,43 @@
+/*GERAL*/
+
+:root {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+	margin-left: 7vw !important;
+	margin-right: 7vw !important;
+	max-width: 1500px;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(100,10,10,0.5);
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(100,10,10,0.2);
+}
+
+@media screen and (max-width: 885px) {
+	.container {
+		margin-left: 4vw !important;
+		margin-right: 4vw !important;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		margin-left: 2vw !important;
+		margin-right: 2vw !important;
+	}
+	
+	::-webkit-scrollbar {
+		display: none
+	}
+}

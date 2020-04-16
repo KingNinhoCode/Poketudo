@@ -1,0 +1,170 @@
+/*HEADER*/
+
+
+header {
+	background: rgba(200,50,50,1);
+	position: relative;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.header .nav-desktop {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .nav-desktop a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.15rem;
+}
+
+.header > div {
+	display: flex;
+	align-items: center;
+}
+
+h1 a {
+	font-size: 30px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	width: 70px;
+}
+
+.principal {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	padding: 20px 0;
+}
+
+.pesquisa {
+	grid-row: 1 / 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pesquisa h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.barra {
+	box-sizing: border-box;
+	background: white;
+	padding: 7px 10px;
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+}
+
+.barra input, .barra button {
+	border: none;
+	font-size: 1.25rem;
+}
+
+.principal > img {
+	max-width: 270px;
+	margin: 0 auto;
+}
+
+
+.clicavel:hover {
+	cursor: pointer;
+}
+
+.nav-mobile {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0px;
+	left: -60vw;
+	z-index: 3;
+	background: gray;
+	width: 60vw;
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.nav-mobile a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.on {
+	transform: translateX(60vw);
+	transition: all 250ms;
+}
+
+.off {
+	transform: translateX(-60vw);
+	transition: all 250ms;
+}
+
+.overlay {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(20,20,20,0.4);
+}
+
+.overlay-on {
+	display: block;
+}
+
+
+/**/
+
+
+@media screen and (max-width: 1020px) {
+	.header .nav-desktop {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 885px) {
+	.logo {
+		width: 50px;
+	}
+
+	.principal {
+		grid-template-rows: repeat(2,1fr);
+		grid-template-columns: 1fr;
+	}
+
+	.pesquisa {
+		grid-row: 2 / 3;
+		text-align: center;
+		align-items: center;
+	}
+
+	.principal > img {
+		max-width: 170px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.header .nav-desktop {
+		display: none;
+	}
+
+}
