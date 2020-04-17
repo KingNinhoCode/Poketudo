@@ -29,7 +29,8 @@
 	height: 50vh;
 	overflow: hidden;
 	position: relative;
-	min-width: 300px;
+	max-height: 340px;
+	min-width: 250px;
 	margin: 2px;
 
 }

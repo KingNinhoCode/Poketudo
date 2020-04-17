@@ -74,6 +74,14 @@ h1 a {
 	font-size: 1.25rem;
 }
 
+.barra input {
+	width: 70%;
+}
+
+.barra button {
+	width: 25%;
+}
+
 .principal > img {
 	max-width: 270px;
 	margin: 0 auto;
